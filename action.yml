@@ -67,7 +67,7 @@ runs:
       path: ${{ github.workspace }}/vcpkg
       repository: microsoft/vcpkg
       ref: '${{ steps.determine-checkout-revision.outputs.vcpkg-revision }}'
-      fetch-depth: 1 
+      fetch-depth: 0 
     env:
       VCPKG_ROOT: "${{ github.workspace }}/vcpkg"
   - name: bootstrap-vcpkg-win
